@@ -61,7 +61,8 @@ syn region markdownH6 matchgroup=markdownH6Delimiter start="#######\@!" end="#*\
 
 syn match markdownBlockquote ">\%(\s\|$\)" contained nextgroup=@markdownBlock
 
-syn region markdownCodeBlock start="    \|\t" end="$" contained
+" 2019-09-25T17:37:09Z I've disabled this, since I always use 3 ticks instead, and it breaks all formatting in indented lists.
+" syn region markdownCodeBlock start="    \|\t" end="$" contained
 
 " TODO: real nesting
 syn match markdownListMarker "\%(\t\| \{0,4\}\)[-*+]\%(\s\+\S\)\@=" contained
